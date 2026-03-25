@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="stocksoftw/stocksoftw.vcxproj" Id="73d960cc-3011-4fdd-8c61-df8be697ff87" />
+</Solution>
