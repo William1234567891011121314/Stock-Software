@@ -10,7 +10,7 @@ public:
 	std::string getDesc();
 	int getQtd();
 
-	void setName();
-	void setDesc();
-	void setQtd();
+	void setName(std::string* name);
+	void setDesc(std::string* desc);
+	void setQtd(int qtd);
 };

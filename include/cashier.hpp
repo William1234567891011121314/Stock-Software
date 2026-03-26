@@ -1,4 +1,6 @@
 #include <string>
+#include <vector>
+
 #include "work_shift.hpp"
 #include "cashier_int.hpp"
 
@@ -19,12 +21,12 @@ public:
 	std::string getPasswd();
 	std::string getUserName();
 
-	void setId();
-	void setSales();
-	void setCommission();
-	void setWorkShift();
-	void setPasswd();
-	void setUserName();
+	void setId(std::vector<Cashier>* cashiers);
+	void setSales(int* sales);
+	void setCommission(float* commission);
+	void setWorkShift(WorkShift* workShift);
+	void setPasswd(std::string* passwd);
+	void setUserName(std::string* userName);
 
 	bool assignInt(CashierInt* cashierInt);
 };
