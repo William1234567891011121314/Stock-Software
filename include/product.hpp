@@ -12,5 +12,5 @@ public:
 
 	void setName(std::string* name);
 	void setDesc(std::string* desc);
-	void setQtd(int qtd);
+	void setQtd(int* qtd);
 };

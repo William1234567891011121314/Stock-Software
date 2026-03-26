@@ -29,7 +29,6 @@ void CashierInt::setId(std::vector<CashierInt>* cashiersInt) {
             setId(cashiersInt);
         }
     }
-    return;
 }
 
 void CashierInt::setSales(int* sales){

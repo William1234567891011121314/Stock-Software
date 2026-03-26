@@ -1,4 +1,6 @@
 #include <string>
+#include <vector>
+#include "batch.hpp"
 
 class StockClerk {
 private:
@@ -10,9 +12,9 @@ public:
 	std::string getUserName();
 	std::string getPasswd();
 
-	void setId();
-	void setName();
-	void setPasswd();
+	void setId(std::vector<StockClerk>* stockClerks);
+	void setName(std::string* userName);
+	void setPasswd(std::string* passwd);
 
-	std::string addBatch();
+	void addBatch(Batch* batch, std::vector<Batch>* stock);
 };

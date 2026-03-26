@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <cstdlib>
 
 #include "../include/cashier.hpp"
 #include "../include/work_shift.hpp"
@@ -27,6 +28,10 @@ std::string Cashier::getPasswd() {
     return passwd;
 }
 
+std::string Cashier::getUserName() {
+    return userName;
+}
+
 //setters
 
 void Cashier::setId(std::vector<Cashier>* cashiers) {
@@ -36,5 +41,29 @@ void Cashier::setId(std::vector<Cashier>* cashiers) {
             setId(cashiers);
         }
     }
-    return;
+}
+
+void Cashier::setSales(int* sales) {
+    this->sales = *sales;
+}
+
+void Cashier::setCommission(float* commission) {
+    this->commission = *commission;
+}
+
+void Cashier::setWorkShift(WorkShift* workShift) {
+    this->workShift = *workShift;
+}
+
+void Cashier::setPasswd(std::string* passwd) {
+    this->passwd = *passwd;
+}
+
+void Cashier::setUserName(std::string* userName) {
+    this->userName = *userName;
+}
+
+bool Cashier::assignInt(CashierInt* cashierInt) {
+    return false;
+    //TO DO
 }

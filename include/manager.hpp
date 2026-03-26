@@ -1,4 +1,8 @@
 #include <string>
+#include <vector>
+
+#include "cashier.hpp"
+#include "work_shift.hpp"
 
 class Manager {
 private:
@@ -10,9 +14,9 @@ public:
 	std::string getUserName();
 	std::string getPasswd();
 
-	void setId();
-	void setName();
-	void setPasswd();
+	void setId(std::vector<Manager>* managers);
+	void setName(std::string* userName);
+	void setPasswd(std::string* passwd);
 
-	void chageWorkShift();
+	void chageWorkShift(Cashier* cashier, WorkShift workShift);
 };
